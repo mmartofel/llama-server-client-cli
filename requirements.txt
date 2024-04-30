@@ -3,4 +3,6 @@ sse_starlette
 starlette_context
 pydantic_settings
 fastapi
-
+llama-cpp-python
+openai
+uvicorn
