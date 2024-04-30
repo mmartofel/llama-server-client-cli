@@ -1,6 +1,7 @@
 mkdir -p ~/minio/data
 
 podman run \
+   -d \
    -p 9000:9000 \
    -p 9001:9001 \
    -v ~/minio/data:/data \
