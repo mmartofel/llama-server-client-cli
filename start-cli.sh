@@ -1,5 +1,5 @@
 
 source ./venv/bin/activate
 
-python start-cli.py
+python ./build/src/start-cli.py
 
