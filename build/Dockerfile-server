@@ -2,18 +2,18 @@ FROM registry.fedoraproject.org/f33/python3
 
 # Add application sources with correct permissions for OpenShift
 USER 0
-ADD requirements.txt .
+ADD ./src/requirements-server.txt .
 
 # Create model directory
 RUN mkdir -p /model
-ADD ./venv/model/Meta-Llama-3-8B-Instruct.Q2_K.gguf /model
+ADD ./model/Meta-Llama-3-8B-Instruct.Q2_K.gguf /model
 
 RUN chown -R 1001:0 ./
 USER 1001
 
 # Install the dependencies
 RUN pip install -U "pip>=19.3.1" && \
-    pip install -r requirements.txt
+    pip install -r requirements-server.txt
 
 # Expose port 8000 by default
 EXPOSE 8000
