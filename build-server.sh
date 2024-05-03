@@ -1,3 +1,3 @@
 
-podman build -t quay.io/mmartofe/llama-server .
+podman build -t quay.io/mmartofe/llama-server -f ./build/Dockerfile-server
 

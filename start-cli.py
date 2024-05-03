@@ -1,8 +1,12 @@
 # Chat with an intelligent assistant in your terminal
+
+import os 
 from openai import OpenAI
 
+server_url=os.environ.get("SERVER_URL","http://127.0.0.1:8000/v1/")
+
 # Point to the local server
-client = OpenAI(base_url="http://llama-server-route-llama-server.apps.obajtek.cgxg5.gcp.redhatworkshops.io/v1/", api_key="not-needed")
+client = OpenAI(base_url=server_url, api_key="not-needed")
 
 client
 
