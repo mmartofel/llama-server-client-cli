@@ -2,7 +2,9 @@
 from openai import OpenAI
 
 # Point to the local server
-client = OpenAI(base_url="http://localhost:8000/v1", api_key="not-needed")
+client = OpenAI(base_url="http://llama-server-route-llama-server.apps.obajtek.cgxg5.gcp.redhatworkshops.io/v1/", api_key="not-needed")
+
+client
 
 history = [
     {"role": "system", "content": "You are an intelligent assistant. You always provide well-reasoned answers that are both correct and helpful."},

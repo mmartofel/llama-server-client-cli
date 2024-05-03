@@ -1,0 +1,19 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: llama-server-service
+  labels:
+    app: llama-server
+    app.kubernetes.io/component: llama-server
+    app.kubernetes.io/instance: llama-server
+spec:
+  ports:
+    - name: 8000-tcp
+      protocol: TCP
+      port: 8000
+      targetPort: 8000
+  internalTrafficPolicy: Cluster
+  type: ClusterIP
+  sessionAffinity: None
+  selector:
+    app: llama-server

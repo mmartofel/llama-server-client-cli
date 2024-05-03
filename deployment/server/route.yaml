@@ -1,0 +1,17 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: llama-server-route
+  labels:
+    app: llama-server
+    app.kubernetes.io/component: llama-server
+    app.kubernetes.io/instance: llama-server
+  annotations:
+spec:
+  to:
+    kind: Service
+    name: llama-server-service
+    weight: 100
+  port:
+    targetPort: 8000-tcp
+  wildcardPolicy: None

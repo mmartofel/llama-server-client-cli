@@ -15,7 +15,7 @@ USER 1001
 RUN pip install -U "pip>=19.3.1" && \
     pip install -r requirements.txt
 
-# Expose port 8080 by default
+# Expose port 8000 by default
 EXPOSE 8000
 
 # Run the application
