@@ -1,0 +1,1 @@
+podman build -t quay.io/mmartofe/llama-nicegui -f ./build/Dockerfile-nicegui
