@@ -1,4 +1,5 @@
 
 venv
 /build/model/*
+/nicegui/__pycache__/
 
