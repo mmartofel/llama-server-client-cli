@@ -1,5 +1,5 @@
 
 venv
 /build/model/*
-/nicegui/__pycache__/
-
+/build/nicegui/__pycache__
+.vscode

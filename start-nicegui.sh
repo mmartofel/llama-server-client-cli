@@ -1,5 +1,8 @@
 
 source ./venv/bin/activate
 
-python ./build/nicegui/main.py
+python ./build/nicegui/main
+
+
+.py
 
