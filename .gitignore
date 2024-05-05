@@ -1,5 +1,10 @@
+.idea/
+.vscode/
+.settings
+.project
+.classpath
 
 venv
 /build/model/*
-/build/nicegui/__pycache__
-.vscode
+build/nicegui/__pycache__/
+
